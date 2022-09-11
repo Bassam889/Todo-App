@@ -1,0 +1,59 @@
+.btn-todo-container {
+  .btn-toggle {
+    @include btn(map-get($colors, "white"), map-get($colors, "green"), map-get($colors, "green"));
+    transition: 0.7s ease-out;
+    &:hover {
+      @include btn(map-get($colors, "green"), map-get($colors, "white"), map-get($colors, "green"));
+    }
+    &:active {
+      transform: $base-transform;
+      transition: 0.3s ease-out;
+    }
+  }
+  .btn-delete {
+    @include btn(map-get($colors, "white"), map-get($colors, "red"), map-get($colors, "red"));
+    transition: 0.7s ease-out;
+    &:hover {
+      @include btn(map-get($colors, "red"), map-get($colors, "white"), map-get($colors, "red"));
+    }
+    &:active {
+      transform: $base-transform;
+      transition: 0.3s ease-out;
+    }
+  }
+}
+
+.btn-clear-container{
+  @include styleContainers(flex-end, flex-end);
+  margin-top: $base-margin + 15;
+  .btn-clear {
+    @include btn(map-get($colors, "red"), map-get($colors, "white"), map-get($colors, "red"));
+    transition: 0.7s ease-out;
+    &:hover {
+      @include btn(map-get($colors, "white"), map-get($colors, "red"), map-get($colors, "red"));
+    }
+    &:active {
+      transform: $base-transform;
+      transition: 0.3s ease-out;
+    }
+  }
+}
+
+.btn-add-todo {
+  @include btn;
+  padding: $base-padding - 8;
+  margin-left: $base-margin + 120;
+  width: 160px;
+  border: none;
+  transition: 0.5s ease-out;
+  &:hover {
+    transform: scale(1.15);
+    -moz-box-shadow:    inset 0 0 10px #c87d0b;
+    -webkit-box-shadow: inset 0 0 10px #c87d0b;
+    box-shadow:         inset 0 0 10px #c87d0b;
+  }
+  &:active {
+    transform: $base-transform;
+    transition: 0.3s ease-out;
+  }
+}

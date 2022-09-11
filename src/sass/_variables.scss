@@ -1,0 +1,16 @@
+$primary: #39335F !default;
+$secondary: #F09A15 !default;
+
+$colors: (
+  "primary": $primary,
+  "secondary": $secondary,
+  "darkPurple": #25213c,
+  "white": #fff,
+  "red": #F81D1D,
+  "green": #5ddf21,
+);
+
+$base-border-radius: 8px !default;
+$base-padding: 20px !default;
+$base-margin: 5px !default;
+$base-transform: translateY(4px) !default;
