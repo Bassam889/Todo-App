@@ -1,4 +1,4 @@
-# Todo App built with React and Sass
+# Todo App built with React and SASS
 
 App created for the purpose of storing todos and complete them
 
